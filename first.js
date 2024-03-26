@@ -84,8 +84,6 @@ let check_Winner = () => {
 let show_Winner = (Winner) => {
     msg_Div.classList.remove("hide");
     msg.innerHTML = `<h3 class="winning-heading">Congratulations! <br><br> <span class="winning-heading-2">Winner is ${Winner} </span></h1>`;
-    game_Box.classList.remove("d-flex" , "justify-content-center" , "align-items-center" , "flex-wrap" , "gap-3")
-    game_Box.classList.add("hide")
     //its a funtion for disabling all the button after the winner was decided. it is also at below
     disable_Boxes();
 };
@@ -104,8 +102,6 @@ let reset_And_New_Game_Btn = () => {
         box.classList.remove("game-smbl-color", "game-smbl-color-2")
     });
     msg_Div.classList.add("hide");
-    game_Box.classList.add("d-flex" , "justify-content-center" , "align-items-center" , "flex-wrap" , "gap-3")
-    game_Box.classList.remove("hide")
     count = 1;
 };
 
